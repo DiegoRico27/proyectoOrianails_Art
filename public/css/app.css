@@ -1,0 +1,382 @@
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white; /* Fondo blanco */
+    padding: 10px;
+    max-width: 90%; /* Ancho máximo del 90% */
+    margin: 0 auto; /* Centrar horizontalmente */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Añadir una sombra suave para dar profundidad */
+    position: fixed; /* Fija el menú en la parte superior */
+    top: 0; /* Alinea el menú con la parte superior de la ventana */
+    left: 0;
+    right: 0;
+    z-index: 1000; /* Asegura que el menú esté por encima de otros elementos */
+}
+
+.contenedorimg .logo {
+    height: 80px;
+}
+
+nav a {
+    color: #333; /* Color de texto oscuro para que resalte */
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+    font-size: 18px; /* Aumentar tamaño de la letra */
+}
+
+nav a:hover {
+    color: #FF4081; /* Color de texto al pasar el ratón (rosa vibrante) */
+    text-decoration: underline;
+}
+
+.social-and-search {
+    display: flex;
+    align-items: center;
+}
+
+.social-icon img {
+    width: 30px;
+    height: 30px;
+    margin-left: 10px;
+}
+
+.social-icon img:hover {
+    opacity: 0.8;
+}
+
+/* Ajuste para evitar que el contenido quede oculto detrás del menú fijo */
+body {
+    padding-top: 70px; /* Ajusta este valor según la altura del menú */
+}
+
+/*Codigo para el footers */
+
+.footer-container {
+    background-color: white; /* Fondo blanco */
+    color: #333; /* Texto oscuro (igual que en el header) */
+    padding: 20px;
+    text-align: center;
+    max-width: 90%; /* Ancho máximo del 90% */
+    margin: 0 auto; /* Centrar horizontalmente */
+    border-top: 1px solid #ccc; /* Línea sutil para separar el footer del resto del contenido */
+}
+
+.marca-logo img {
+    width: 150px; /* Tamaño más grande para el logo */
+    height: auto;
+    margin-bottom: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para resaltar el logo */
+}
+
+footer p {
+    margin: 0;
+    font-size: 14px;
+    color: #333; /* Asegura que el color del texto sea consistente */
+}
+
+
+/** Este es el archivo css del home **/
+
+.home-container {
+    text-align: center;
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+.fondoimagen {
+    position: relative;
+}
+
+.fondo {
+    width: 100%;
+    height: auto;
+    max-height: 500px; /* Ajusta la altura máxima de la imagen según tus necesidades */
+    object-fit: cover;
+}
+
+.welcome-message {
+    background-color: rgba(255, 255, 255, 0.8); /* Fondo semitransparente para el texto */
+    padding: 20px;
+    margin-top: -100px; /* Superponer el texto sobre la imagen */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.welcome-message h1 {
+    font-size: 36px;
+    color: #333;
+}
+
+.welcome-message p {
+    font-size: 18px;
+    color: #666;
+}
+  /** este son los estilos para los css de los servicios**/
+
+  /* Contenedor general de los servicios */
+.services-container {
+    max-width: 90%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Grid para las tarjetas de servicio */
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+/* Tarjeta de servicio */
+.service-card {
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    padding: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Efecto al pasar el ratón sobre la tarjeta */
+.service-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+/* Imagen del servicio */
+.service-image {
+    max-width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+/* Título del servicio */
+h4 {
+    color: #FF4081;
+    margin-top: 10px;
+    font-size: 1.2rem;
+}
+
+/* Descripción y precio del servicio */
+p {
+    color: #555;
+    margin-top: 5px;
+    font-size: 0.9rem;
+}
+
+/* Botones en las tarjetas de servicio */
+.btn {
+    margin-top: 10px;
+    padding: 10px 15px;
+    font-size: 0.9rem;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #fff;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+}
+
+/* Botón Editar */
+.btn-primary {
+    background-color: #007bff;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+}
+
+/* Botón Eliminar */
+.btn-danger {
+    background-color: #dc3545;
+}
+
+.btn-danger:hover {
+    background-color: #c82333;
+}
+
+/* Botón Agregar Servicio */
+.btn-success {
+    background-color: #28a745;
+    margin-top: 20px;
+    display: inline-block;
+}
+
+.btn-success:hover {
+    background-color: #218838;
+}
+
+/* Estilos para el formulario de creación */
+.form-container {
+    max-width: 50%;  /* Cambiado para que el formulario ocupe el 70% del contenido */
+    margin: 30px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo de los campos del formulario */
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #555;
+}
+
+.form-control {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+}
+
+/* Estilo del botón de submit en el formulario */
+.btn-submit {
+    background-color: #28a745;
+    padding: 10px 15px;
+    font-size: 1rem;
+    border-radius: 5px;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-submit:hover {
+    background-color: #218838;
+}
+
+/** estilos para los mensajes de exito y error **/
+/* Estilo para los mensajes de éxito y error */
+.alert {
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 4px;
+}
+
+.alert-success {
+    background-color: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+}
+
+.alert-danger {
+    background-color: #f8d7da;
+    color: #721c24;
+    border: 1px solid #f5c6cb;
+}
+
+/* Estilo para el formulario */
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-control {
+    width: 100%;
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+
+.btn {
+    padding: 10px 20px;
+    border-radius: 4px;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+}
+
+.btn-primary {
+    background-color: #007bff;
+}
+
+.btn-success {
+    background-color: #28a745;
+}
+
+.btn-danger {
+    background-color: #dc3545;
+}
+
+/**estilos para la tabla de las reservas**/
+
+/* Estilo para centrar y agregar margen al título */
+h2 {
+    margin-top: 50px; /* Ajusta el espacio encima del título */
+    text-align: center; /* Centra el texto del título */
+}
+
+/* Estilo para la tabla */
+.table-custom {
+    width: 90%; /* Ajusta el ancho de la tabla al 90% */
+    margin: 0 auto; /* Centra la tabla horizontalmente */
+    border-collapse: collapse; /* Elimina el espacio entre bordes de celdas */
+}
+
+.table-custom th, .table-custom td {
+    border: 1px solid #ddd; /* Agrega un borde gris claro a las celdas */
+    padding: 8px; /* Agrega un poco de relleno en las celdas */
+}
+
+.table-custom th {
+    background-color: #f2f2f2; /* Color de fondo para los encabezados */
+    text-align: left; /* Alinea el texto del encabezado a la izquierda */
+}
+
+.form-container {
+    width: 50%;
+    margin: 0 auto; /* Centra el formulario horizontalmente */
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+.form-container h2 {
+    margin-bottom: 20px; /* Espacio debajo del título */
+}
+
+/* Borde de la tabla */
+.table-bordered {
+    border: 1px solid #dee2e6; /* Borde exterior de la tabla */
+}
+
+/* Borde de las celdas */
+.table-bordered th,
+.table-bordered td {
+    border: 1px solid #dee2e6; /* Borde de las celdas */
+}
+
+/* Ajustar el ancho de la tabla y centrarla */
+.table-responsive {
+    max-width: 80%; /* Ancho máximo de la tabla */
+    margin: 0 auto; /* Centra la tabla horizontalmente */
+}
+
+/* Opcional: Añadir un margen al título */
+h2 {
+    margin-bottom: 20px; /* Espacio debajo del título */
+}
+
+
+.container {
+    min-height: 100vh;
+}
+
+.container .col-md-6 {
+    background-color: #f8f9fa; /* Fondo opcional */
+    padding: 20px; /* Espaciado interno */
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Sombra opcional */
+}
+
+
